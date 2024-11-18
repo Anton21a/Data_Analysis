@@ -1,0 +1,36 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}     &    log\_price    & \textbf{  R-squared:         } &     0.021   \\
+\textbf{Model:}             &       OLS        & \textbf{  Adj. R-squared:    } &     0.020   \\
+\textbf{Method:}            &  Least Squares   & \textbf{  F-statistic:       } &     30.42   \\
+\textbf{Date:}              & Mon, 18 Nov 2024 & \textbf{  Prob (F-statistic):} &  8.22e-14   \\
+\textbf{Time:}              &     16:59:06     & \textbf{  Log-Likelihood:    } &   -3277.4   \\
+\textbf{No. Observations:}  &        3115      & \textbf{  AIC:               } &     6561.   \\
+\textbf{Df Residuals:}      &        3112      & \textbf{  BIC:               } &     6579.   \\
+\textbf{Df Model:}          &           2      & \textbf{                     } &             \\
+\textbf{Covariance Type:}   &       HC1        & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                            & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}          &   -3259.0321  &      418.659     &    -7.784  &         0.000        &    -4079.588    &    -2438.476     \\
+\textbf{longitude}          &       5.6429  &        0.724     &     7.795  &         0.000        &        4.224    &        7.062     \\
+\textbf{squared\_longitude} &      -0.0024  &        0.000     &    -7.794  &         0.000        &       -0.003    &       -0.002     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 223.639 & \textbf{  Durbin-Watson:     } &    1.907  \\
+\textbf{Prob(Omnibus):} &   0.000 & \textbf{  Jarque-Bera (JB):  } &  297.486  \\
+\textbf{Skew:}          &   0.629 & \textbf{  Prob(JB):          } & 2.52e-65  \\
+\textbf{Kurtosis:}      &   3.843 & \textbf{  Cond. No.          } & 4.32e+10  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors are heteroscedasticity robust (HC1) \newline
+ [2] The condition number is large, 4.32e+10. This might indicate that there are \newline
+ strong multicollinearity or other numerical problems.
