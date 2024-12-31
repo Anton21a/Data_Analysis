@@ -1,35 +1,20 @@
-\begin{center}
-\begin{tabular}{lclc}
+\begin{tabular}{lrrrr}
 \toprule
-\textbf{Dep. Variable:}    &    log\_price    & \textbf{  R-squared:         } &     0.000   \\
-\textbf{Model:}            &       OLS        & \textbf{  Adj. R-squared:    } &    -0.000   \\
-\textbf{Method:}           &  Least Squares   & \textbf{  F-statistic:       } &    0.4751   \\
-\textbf{Date:}             & Tue, 19 Nov 2024 & \textbf{  Prob (F-statistic):} &    0.491    \\
-\textbf{Time:}             &     11:36:11     & \textbf{  Log-Likelihood:    } &   -3310.2   \\
-\textbf{No. Observations:} &        3115      & \textbf{  AIC:               } &     6624.   \\
-\textbf{Df Residuals:}     &        3113      & \textbf{  BIC:               } &     6636.   \\
-\textbf{Df Model:}         &           1      & \textbf{                     } &             \\
-\textbf{Covariance Type:}  &       HC1        & \textbf{                     } &             \\
-\bottomrule
-\end{tabular}
-\begin{tabular}{lcccccc}
-                   & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+ & Coefficient & Std Error & t-Statistic & P-Value \\
 \midrule
-\textbf{Intercept} &       2.7557  &        3.047     &     0.904  &         0.366        &       -3.217    &        8.728     \\
-\textbf{longitude} &       0.1816  &        0.263     &     0.689  &         0.491        &       -0.335    &        0.698     \\
+Constant & -287.6254 & 35.7227 & -8.0516 & 0.0000 \\
+Hindi[T.1] & 9.1913 & 1.4579 & 6.3047 & 0.0000 \\
+Tamil[T.1] & 5.4909 & 0.6244 & 8.7941 & 0.0000 \\
+Korean[T.1] & 12.0321 & 2.2120 & 5.4394 & 0.0000 \\
+valence & -7.0349 & 0.9814 & -7.1685 & 0.0000 \\
+speechiness & 39.2661 & 6.0510 & 6.4892 & 0.0000 \\
+speechiness_squared & -48.6588 & 6.1556 & -7.9048 & 0.0000 \\
+liveness & -5.9585 & 1.3571 & -4.3906 & 0.0000 \\
+mode & -0.3095 & 0.4801 & -0.6445 & 0.5192 \\
+tempo < 115 & -0.0687 & 0.0190 & -3.6193 & 0.0003 \\
+tempo [115,175] & 0.0642 & 0.0167 & 3.8337 & 0.0001 \\
+tempo > 175 & -0.1208 & 0.0918 & -1.3160 & 0.1882 \\
+Log Duration & 51.5019 & 5.8866 & 8.7490 & 0.0000 \\
+Log Duration Squared & -2.1822 & 0.2437 & -8.9545 & 0.0000 \\
 \bottomrule
 \end{tabular}
-\begin{tabular}{lclc}
-\textbf{Omnibus:}       & 205.580 & \textbf{  Durbin-Watson:     } &    1.897  \\
-\textbf{Prob(Omnibus):} &   0.000 & \textbf{  Jarque-Bera (JB):  } &  265.302  \\
-\textbf{Skew:}          &   0.605 & \textbf{  Prob(JB):          } & 2.46e-58  \\
-\textbf{Kurtosis:}      &   3.762 & \textbf{  Cond. No.          } & 2.74e+03  \\
-\bottomrule
-\end{tabular}
-%\caption{OLS Regression Results}
-\end{center}
-
-Notes: \newline
- [1] Standard Errors are heteroscedasticity robust (HC1) \newline
- [2] The condition number is large, 2.74e+03. This might indicate that there are \newline
- strong multicollinearity or other numerical problems.

@@ -1,0 +1,47 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                &    popularity    & \textbf{  R-squared:         } &     0.126   \\
+\textbf{Model:}                        &       OLS        & \textbf{  Adj. R-squared:    } &     0.124   \\
+\textbf{Method:}                       &  Least Squares   & \textbf{  F-statistic:       } &     89.51   \\
+\textbf{Date:}                         & Tue, 31 Dec 2024 & \textbf{  Prob (F-statistic):} & 1.08e-210   \\
+\textbf{Time:}                         &     14:54:00     & \textbf{  Log-Likelihood:    } &   -16504.   \\
+\textbf{No. Observations:}             &        4064      & \textbf{  AIC:               } & 3.304e+04   \\
+\textbf{Df Residuals:}                 &        4050      & \textbf{  BIC:               } & 3.312e+04   \\
+\textbf{Df Model:}                     &          13      & \textbf{                     } &             \\
+\textbf{Covariance Type:}              &       HC1        & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                       & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                     &    -287.6254  &       35.723     &    -8.052  &         0.000        &     -357.641    &     -217.610     \\
+\textbf{Hindi[T.1]}                    &       9.1913  &        1.458     &     6.305  &         0.000        &        6.334    &       12.049     \\
+\textbf{Tamil[T.1]}                    &       5.4909  &        0.624     &     8.794  &         0.000        &        4.267    &        6.715     \\
+\textbf{Korean[T.1]}                   &      12.0321  &        2.212     &     5.439  &         0.000        &        7.697    &       16.368     \\
+\textbf{valence}                       &      -7.0349  &        0.981     &    -7.169  &         0.000        &       -8.958    &       -5.111     \\
+\textbf{speechiness}                   &      39.2661  &        6.051     &     6.489  &         0.000        &       27.406    &       51.126     \\
+\textbf{speechiness2}                  &     -48.6588  &        6.156     &    -7.905  &         0.000        &      -60.724    &      -36.594     \\
+\textbf{liveness}                      &      -5.9585  &        1.357     &    -4.391  &         0.000        &       -8.618    &       -3.299     \\
+\textbf{mode}                          &      -0.3095  &        0.480     &    -0.645  &         0.519        &       -1.250    &        0.632     \\
+\textbf{lspline(tempo, [115, 175])[0]} &      -0.0687  &        0.019     &    -3.619  &         0.000        &       -0.106    &       -0.032     \\
+\textbf{lspline(tempo, [115, 175])[1]} &       0.0642  &        0.017     &     3.834  &         0.000        &        0.031    &        0.097     \\
+\textbf{lspline(tempo, [115, 175])[2]} &      -0.1208  &        0.092     &    -1.316  &         0.188        &       -0.301    &        0.059     \\
+\textbf{logDuration}                   &      51.5019  &        5.887     &     8.749  &         0.000        &       39.964    &       63.039     \\
+\textbf{logDuration2}                  &      -2.1822  &        0.244     &    -8.954  &         0.000        &       -2.660    &       -1.705     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 1677.921 & \textbf{  Durbin-Watson:     } &    0.423  \\
+\textbf{Prob(Omnibus):} &   0.000  & \textbf{  Jarque-Bera (JB):  } & 6840.399  \\
+\textbf{Skew:}          &   2.044  & \textbf{  Prob(JB):          } &     0.00  \\
+\textbf{Kurtosis:}      &   7.867  & \textbf{  Cond. No.          } & 5.05e+04  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors are heteroscedasticity robust (HC1) \newline
+ [2] The condition number is large, 5.05e+04. This might indicate that there are \newline
+ strong multicollinearity or other numerical problems.
